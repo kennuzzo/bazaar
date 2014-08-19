@@ -23,6 +23,9 @@ module Bazaar
     get_item("superadj", options) + '-' + get_item("superitems", options) +
       '-' + rand(0-9999).to_s
   end
+  def self.gdrive(options={})
+    'anonymous ' + get_item("animals",options)
+  end
   def self.get_item(filename, options = {})
     items = File.read(File.expand_path("../bazaar/#{filename}.txt", __FILE__)).split("\n")
     items.select!{ |item| item.length <= options[:max_length] } if options[:max_length]
