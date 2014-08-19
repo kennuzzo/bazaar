@@ -33,6 +33,17 @@ Or install it yourself as:
     => "jubilant-sunset-9301"
     => "frightened-geyser-4542"
 
+    Bazaar.adjective_animal
+    => "Golden quetzal"
+    => "Mighty triceratop"
+    Bazaar.adjective_animal({start_with: 'p'})
+    => "Pure panda"
+    => "Pumped ptarmigan"
+
+    Bazaar.anonymous_animal
+    => "anonymous gopher"
+    => "anonymous axolotl"
+
     Bazaar.adj
     => "Colossal"
     Bazaar.item

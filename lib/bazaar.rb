@@ -24,7 +24,7 @@ module Bazaar
       '-' + rand(0-9999).to_s
   end
   def self.anonymous_animal(options={})
-    ('anonymous ' + get_item("animals",options)).humanize
+    ('anonymous ' + get_item("animals",options)).humanize 
   end
   def self.adjective_animal(options={})
     (get_item("superadj",options) + ' ' + get_item("animals",options)).humanize
